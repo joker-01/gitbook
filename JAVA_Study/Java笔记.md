@@ -1,4 +1,4 @@
-## JDK与JRE
+# JDK与JRE
 ### 安装JDK与配置路径
 ```
 CLASSPATH
@@ -16,7 +16,7 @@ PATH
 JAVA_HOME后加分号的结果  
 ![error](./pic/JAVA_HOME配置错误.png)
 
-## Tomacat
+# Tomacat
 ### 1.Tomcat目录结构
     bin
     conf
@@ -35,23 +35,23 @@ JAVA_HOME后加分号的结果
 
 ### 4.部署和配置项目
 #### 4.1 方法一
-webapps/virtual/项目目录or war包
+webapps/virtual/项目目录or war包  
 localhost:8080/virtual虚拟目录/virtual.html资源
-#### 4.2 方法二
+#### 4.2 方法二  
 conf/server.xml
-![](./pic/config:server.png)
+![](./pic/config_server.png)
 ```
 <host>
   <Content docBase="项目路径" path="虚拟目录"/>
 <host>
 ```
 #### 4.3 方法三(热部署)
-conf/Catalina/localhost 下创建文件 <虚拟目录Name>.xml
+conf/Catalina/localhost 下创建文件 <虚拟目录Name>.xml  
 内容:  
 ```
 <Content docBase="项目路径" />
 ```
-##### 4.4 动态项目目录结构
+#### 4.4 动态项目目录结构
 ```
 src  
 /--java  
@@ -144,7 +144,7 @@ server.xml 中
 原   因：   Java环境变量设置错误  
 解决方案：  重新设置环境变量
 
-## Servlet
+# Servlet
 Server applet 运行在服务器端的小程序  
 ### 1.概念    
 本质:是一个接口,interface,  
@@ -177,30 +177,31 @@ public class ServletDemo1 implements Servlet {
     }
 }
 ```
-### 3.Servlet体系结构  
-Servlet  
-|
-GenericServlet
-|  
-HttpServelet
-
+### 3.Servlet体系结构 
+``` 
+Servlet
+   |  
+   └── GenericServlet  
+             |  
+             └──  HttpServelet
+```
 Request继承体系
+```
 ServletRequest
-|
-HttpServletRequest
-|
-org.apache.catalina.connector.RequestFacade(Tomcat运行中实现)
-
-
+     |  
+     └── HttpServletRequest
+             |  
+             └── org.apache.catalina.connector.RequestFacade(Tomcat运行中实现)
+```
 #### 出现问题,看详细日志信息
 /Users//Library/Logs/IntelliJIdea2019.2/idea.log
 
 # IDLE使用问题
-Error: Application Server not specified
-一、问题
-idea中的tomcat报错： Application Server not specified
-二、解决
-原因是没有关联本地的tomcat,关联本地tomcat即可
+Error: Application Server not specified  
+一、问题  
+idea中的tomcat报错： Application Server not specified  
+二、解决  
+原因是没有关联本地的tomcat,关联本地tomcat即可  
 
 
 
