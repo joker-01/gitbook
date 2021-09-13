@@ -16,6 +16,12 @@ PATH
 JAVA_HOME后加分号的结果  
 ![error](./pic/JAVA_HOME配置错误.png)
 
+# 下载JAVA API Document文档
+![](./pic/javaAPIDocumentDownload_1.png)
+![](./pic/javaAPIDocumentDownload_2.png)
+![](./pic/javaAPIDocumentDownload_3.png)
+
+
 # Tomacat
 ### 1.Tomcat目录结构
     bin
@@ -202,6 +208,18 @@ Error: Application Server not specified
 idea中的tomcat报错： Application Server not specified  
 二、解决  
 原因是没有关联本地的tomcat,关联本地tomcat即可  
+
+
+# 类路径
+1.一般项目  
+    --  1、类路径
+    就是项目的src下。  
+    --  2、获取类路径下的资源  
+    使用类加载器：  
+    Demo.class.getClassLoader() //获取一个类加载器  
+    Demo.class.getClassLoader().getResourceAsStream("druid.properties"); //获取src下的资源  
+
+2.SSM项目  
 
 
 

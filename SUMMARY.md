@@ -20,6 +20,7 @@
 * [第三章 JavaWeb]()
     * [1.创建Maven项目](Part3-JavaWeb/1-创建Maven项目.md)
     * [2.Mybatis-generator反向生成代码](Part3-JavaWeb/2-Mybatis-generator反向生成代码.md)
+    * [3.JDBC学习](Part3-JavaWeb/3-JDBC的学习.md)
 
 * [第四章 JAVA学习]()
   * [Java笔记](part4-JAVA_Study\Java笔记.md)

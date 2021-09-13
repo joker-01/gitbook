@@ -53,3 +53,43 @@
 ```
 
 Tips：建议学习一下JS里关于Dom树的操作
+
+# 简单的保存百度文库内容的Js代码，后期需要手工Nodepad++修剪一下
+```
+arrow = document.getElementsByTagName("p");
+for(i=0;i<=arrow.length-1;i++){
+  console.log(arrow[i].innerText)
+}
+```
+```
+while(i<document.getElementsByTagName("p").length){
+    i++;console.log(document.getElementsByTagName("p")[i].innerText)
+}
+```
+
+# 禁止代码片段复制的代码
+删除之
+```
+<script type="application/ld+json">{"@context":"https://ziyuan.baidu.com/contexts/cambrian.jsonld","@id":"https://blog.csdn.net/lose_synchronization/article/details/113437305","appid":"1638831770136827","pubDate":"2021-01-30T16:07:43","title":"Java打印任意字符串的字符画_lose_synchronization的博客-CSDN博客","upDate":"2021-01-30T16:07:43"}</script>
+```
++ 主要是下面的代码在起作用
+```
+<style>
+        #content_views pre{
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none; 
+            user-select: none; 
+        }
+        #content_views pre code{
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none; 
+            user-select: none; 
+        }
+    </style>
+```

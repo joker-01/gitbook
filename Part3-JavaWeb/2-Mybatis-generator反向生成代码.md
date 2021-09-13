@@ -249,3 +249,19 @@ http://events.jianshu.io/p/4e5a70c14b2d
 
 # 其他
 ![](./picture/Mybatis产品.png)
+
+# 错误
+![](./picture/generatorMybatis-error.png)
+
+
+# 快速记忆
+```
+<context id="testTables" targetRuntime="MyBatis3" defaultModelType="flat">
+
+<jdbcConnection driverClass="com.mysql.cj.jdbc.Driver"
+                        connectionURL="jdbc:mysql://39.101.162.217:3306/ssm?useUnicode=true&amp;characterEncoding=utf-8&amp;serverTimezone=UTC"
+                        userId="chao"
+                        password="chao">
+   <property name = "nullCatalogMeansCurrent" value = "true"/>
+</jdbcConnection>
+```
