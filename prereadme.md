@@ -14,4 +14,5 @@ https://api.u-tools.cn/Plugins/Developer/allPlugins
 
 
 
+在VScode中，保存文件的格式是UTF-8形式的，ASCII可以讲过Nodepad++转为这种编码格式，否则汉字显示为乱码
 
