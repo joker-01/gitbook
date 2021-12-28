@@ -111,3 +111,6 @@ VUE CLI项目的打包部署
 有package。json目录下 vue run build
 打包的项目必须在服务器上运行，放到服务上。
 出现dist目录，就是项目的部署目录
+
+Vue2.0 搭建Vue脚手架（vue-cli）  
+https://segmentfault.com/a/1190000011275993
