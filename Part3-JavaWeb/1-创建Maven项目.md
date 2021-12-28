@@ -1,20 +1,24 @@
 # 创建Maven工程
 1.
-![](./picture/Maven-IJ-1.png)  
+![](./picture/Article1-1-Maven-IJ.png)  
 2.
-![](./picture/Maven-IJ-2.png)
+![](./picture/Article1-2-Maven-IJ.png)
 3.
-![](./picture/Maven-IJ-3.png)
-4.【File】--【Settings】--【】
-![](./picture/Maven-IJ-4.png)
+![](./picture/Article1-3-Maven-IJ.png)
+4.【File】--【Settings】--【Build,Execution,Deployment】
+![](./picture/Article1-4-Maven-IJ.png)
 5.配置到自己的Maven目录与仓库  
-![](./picture/Maven-IJ-5.png)
+![](./picture/Article1-5-Maven-IJ.png)
 --
 # 存在小问题
 ## Question1
-![](./picture/Maven-IJ-6.png)
-![](./picture/Maven-IJ-7.png)
+> URL is not registered
+
+![](./picture/Article1-6-Maven-IJ.png)
+
+> 右键拉取即可
+![](./picture/Article1-7-Maven-IJ.png)
 
 # 知识点  
-Maven入门
-https://juejin.cn/post/6844903543711907848
+Maven入门  
+https://juejin.cn/post/6844903543711907848  

@@ -1,9 +1,5 @@
-右键pom.xml--》add as maven project    
-File --> Setting --> Build,Execution,Deployment-->Build Tools -->Maven  做好相应的配置
-
-
-------------
-IDEA 之 sdk和Language level
+  
+# IDEA 之 sdk和Language level  
 在java项目中必不可少的是我们要指定一个jdk。
 
 在指定jdk的同时，还可以指定jdk的Language level，这个有点像我们工程最低支持版本。比如Language level 设置了5.0 只是就不能出现使用6.0／7.0特性的代码。
@@ -14,11 +10,11 @@ IDEA 之 sdk和Language level
 
 在IntelliJ中有两个地方设置这个参数。
 
-![8-1](./picture/8-1.jpg)
+![8-1](./picture/Article8-1-.jpg)
 
 这个设置针对整个工程，或者说是工程默认的。
 
-![8-2](./picture/8-2.jpg)
+![8-2](./picture/Article8-2-.jpg)
 
 这里是针对模块的，这里才是正在生效的设置。
 
@@ -26,7 +22,7 @@ IDEA 之 sdk和Language level
 
 此处可以重新指定。project设置就失效。
 
-这个设置需要重新载入项目
+这个设置需要重新载入项目  
 ————————————————
-版权声明：本文为CSDN博主「我妻善逸丶honor」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+版权声明：本文为CSDN博主「我妻善逸丶honor」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。  
 原文链接：https://blog.csdn.net/wei_gg/article/details/91445821

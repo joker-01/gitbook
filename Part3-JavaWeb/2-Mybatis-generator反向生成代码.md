@@ -222,17 +222,17 @@
 
 # 参考资料
 
-MyBatis Generator 配置详解
+MyBatis Generator 配置详解  
 https://blog.csdn.net/testcs_dn/article/details/79295065
 
 
 https://www.cnblogs.com/yjmyzz/p/4210554.html  
 https://blog.csdn.net/qi49125/article/details/52277686  
 
-idea创建Maven项目时Maven插件内看不到mybatis-generator
+idea创建Maven项目时Maven插件内看不到mybatis-generator  
 https://blog.csdn.net/yytwiligt/article/details/81010360
 
-MybatisGenerator生成WithBLOBS.java文件原因及解决方案
+MybatisGenerator生成WithBLOBS.java文件原因及解决方案  
 https://blog.csdn.net/qq_41969358/article/details/88056769  
 MyBatis中的JdbcType映射介绍  
 https://blog.csdn.net/bisal/article/details/82775403
@@ -240,7 +240,7 @@ https://blog.csdn.net/bisal/article/details/82775403
 MyBatis-Generato代码生成器取消生成xxxxKey实体类  
 https://blog.csdn.net/u011781521/article/details/106264947
 
-gradle使用mybatis-generator生成user表相关文件只生成mysql..user的原因说明
+gradle使用mybatis-generator生成user表相关文件只生成mysql..user的原因说明  
 https://www.iteye.com/blog/357029540-2427342
 
 MyBatis逆向工程生成xxxWithBLOBs、xxxKey  
@@ -248,10 +248,12 @@ http://events.jianshu.io/p/4e5a70c14b2d
 
 
 # 其他
-![](./picture/Mybatis产品.png)
+Mybatis产品  
+![](./picture/Article2-1-Mybatis产品.png)
+
 
 # 错误
-![](./picture/generatorMybatis-error.png)
+![](./picture/Article2-2-generatorMybatis-error.png)
 
 
 # 快速记忆

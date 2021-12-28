@@ -4,9 +4,10 @@ date: 2020-09-28 22:54:26
 tags:
 ---
 
-## Maven概述
+# Maven概述
 
 ## Maven的安装
++ 下载
 + 解压
 + 配置环境变量  
  -- M2_HOME  E:\Drivers\YX\test\apache-maven-3.6.3  
@@ -292,7 +293,7 @@ under the License.
 ```
 
 
-## Maven与spring关系
+# Maven与spring关系
 
 先创建Maven工程，在pom.xml中引入SpringFramework依赖；
 ```
@@ -346,12 +347,58 @@ com.itcast.it.Person
 
 ## 关于离线使用IJ的一些问题
 
-+  > http://www.springframework.org/schema/beans  
+ 
 
-URI is not registered   
+### Qusetion1: 
+ 
++ URI is not registered   
++  > http://www.springframework.org/schema/beans
+- Files > Settings > Schemas and DTDs  
+  添加额外URI和Location（本地）or 直接Ignored Schemas and DTDs 
 
-Files > Settings > Schemas and DTDs  
-添加额外URI和Location（本地）or 直接Ignored Schemas and DTDs 
+### Question2: 
++ Maven目录没有了
+way1:  
+```
+右键pom.xml--> add as maven project    
+File --> Setting --> Build,Execution,Deployment-->Build Tools -->Maven  做好相应的配置
+```
+way2:
+```
+在view-> Maven界面
+```
+
+## Maven中的GroupID和ArtifactID指的是什么？
+
+GroupId和ArtifactId被统称为“坐标”是为了保证项目唯一性而提出的，  
+如果你要把你项目弄到maven本地仓库去，你想要找到你的项目就必须根据这两个id去查找。  
+
+GroupId一般分为多个段，这里我只说两段，第一段为域，第二段为公司名称。域又分为org、com、cn等等许多，其中org为非营利组织，com为商业组织。  
+举个apache公司的tomcat项目例子：这个项目的GroupId是org.apache，它的域是org（因为tomcat是非营利项目），公司名称是apache，ArtifactId是tomcat。  
+
+比如我创建一个项目，我一般会将GroupId设置为cn.mht，cn表示域为中国，mht是我个人姓名缩写，ArtifactId设置为testProj，表示你这个项目的名称是testProj，依照这个设置，在你创建Maven工程后，新建包的时候，包结构最好是cn.zr.testProj打头的，  
+如果有个StudentDao[Dao层的]，它的全路径就是cn.zr.testProj.dao.StudentDao
 
 
+## Maven将手动下载的jar包以命令行的方式安装到指定位置的repo中
 
+在maven文件的bin目录下  
+mvn install:install-file -Dfile=E:\abc\JavaDev\test\joda-time-2.10.13.jar  -DgroupId=com.test -DartifactId=test1 -Dversion=1.0.0 -Dpackaging=jar
+
+-Dfile：包的本地真实地址  
+
+-DgroupId：pom.xml中groupId  
+
+-DartifactId：pom.xml中artifactId  
+
+-Dversion：pom.xml中0.0.1-SNAPSHOT  
+
+-Dpackaging：jar或war，包的后缀名  
+
+![](./picture/Article6-1-maven-input.png)  
+
+更改jar包安装位置，在于maven 》 configuration 》 setting
+
+ <localRepository>F:\apache-maven-3.6.0\repository</localRepository>
+
+参考：https://blog.csdn.net/aishun8091/article/details/101131602
