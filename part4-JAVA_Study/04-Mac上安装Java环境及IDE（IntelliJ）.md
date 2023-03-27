@@ -35,6 +35,9 @@ tags:
 #### 出现问题,看详细日志信息
 /Users//Library/Logs/IntelliJIdea2019.2/idea.log
 
+## Linux 系统中配置Java环境变量
+> export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.161-2.b14.el7.x86_64/jre/bin/java
+
 
 
 

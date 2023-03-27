@@ -1,0 +1,2 @@
+### 问题描述
+> Access to XMLHttpRequest at 'http://localhost:8088/findUserName' from origin 'http://localhost:3001' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: No 'Access-Control-Allow-Origin' header is present on the requested resource.

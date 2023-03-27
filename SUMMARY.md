@@ -10,7 +10,7 @@
 
 * [第一章 待处理事项](part1-git\README.md) 
     * [1 待处理](part1-git\待处理.md)
-    * [2 gitbook入门](part1-git\gitbook.md)
+    * [2 gitbook入门](part1-git\0.gitbook.md)
 
 * [第二章](part2/README.md)
     * [看板娘的世界](part2/看板娘.md)
